@@ -1,6 +1,6 @@
 # Movies-API-Challenge
 
-👩🏻‍💻 Per vedere il sito --> https://643f0e43bb8b56006f23d26b--effervescent-gumption-e23ae5.netlify.app/
+👩🏻‍💻 Per vedere il sito --> https://643f9f0283fc96746ead308b--dainty-stroopwafel-1a1db4.netlify.app/
 
 🔥Viene tutto ricreato con codice Javascript e le API.
 
