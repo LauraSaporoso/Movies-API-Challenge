@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(219, 219, 219);
+}
+
+.title {
+    margin-block: 20px 0px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.subtitle {
+    color: rgb(124, 124, 124);
+    font-size: 16px;
+    text-align: center;
+    word-wrap: break-word;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.card {
+    min-width: 200px;
+    max-width: 280px;
+    height: 480px;
+    background-color: rgb(35, 34, 34);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px rgb(160, 160, 160);
+    position: relative;
+    overflow: hidden;
+}
+
+.info {
+    background-color: rgb(35, 34, 34);
+    z-index: 2;
+    padding-inline: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info h1 {
+    font-size: 18px;
+    color: rgb(178, 178, 178);
+    width: 100%;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+.info p {
+    padding-inline: 12px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: rgb(250, 115, 5);
+}
+
+img {
+    max-width: 280px;
+    height: auto;
+
+}
+
+/* overview part */
+.overview {
+    position: absolute;
+    background-color: aliceblue;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease;
+    z-index: 3;
+}
+
+.overview h2 {
+    font-weight: 700;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
+
+.overview p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.card:hover .overview {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .card:hover .overview {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
